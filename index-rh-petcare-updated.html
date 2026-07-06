@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="R.H. Pet Care offers professional pet walking and drop-in visits throughout West Hempfield Township for dogs, cats, goats, chickens, and other animals." />
+  <title>R.H. Pet Care | Pet Walking and Drop-In Visits</title>
+
+  <style>
+    :root {
+      --cream: #fffaf4;
+      --card: #ffffff;
+      --teal: #0f766e;
+      --teal-dark: #115e59;
+      --orange: #ea7c2d;
+      --orange-light: #f4b183;
+      --text: #2b2b2b;
+      --muted: #5f6368;
+      --border: #d7e6e4;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(234, 124, 45, 0.12), transparent 28rem),
+        linear-gradient(180deg, var(--cream), #ffffff);
+    }
+
+    header {
+      background: rgba(255, 250, 244, 0.96);
+      border-bottom: 1px solid var(--border);
+      padding: 1.1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(8px);
+    }
+
+    .brand {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--teal-dark);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 700;
+    }
+
+    nav a:hover { color: var(--orange); }
+
+    .hero {
+      padding: 5rem 5% 4rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 2rem;
+      align-items: center;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: var(--orange);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 5vw, 4.3rem);
+      line-height: 1.08;
+      margin: 0 0 1rem;
+      color: var(--teal-dark);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin: 0 0 1.5rem;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--teal);
+      color: #ffffff;
+      padding: 0.9rem 1.3rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .button:hover { background: var(--teal-dark); }
+
+    .hero-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: 0 16px 35px rgba(15, 118, 110, 0.14);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pet-accent {
+      font-size: 3.25rem;
+      line-height: 1;
+      opacity: 0.14;
+      position: absolute;
+      right: 1.25rem;
+      top: 1rem;
+      transform: rotate(-16deg);
+      font-weight: 900;
+      color: var(--orange);
+    }
+
+    .hero-card h2,
+    section h2,
+    .card h3,
+    .notice h3 {
+      color: var(--teal-dark);
+    }
+
+    .hero-card h2 { margin-top: 0; }
+
+    .highlight-list {
+      padding-left: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    section {
+      padding: 3rem 5%;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    .cards,
+    .details-grid {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .details-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .card,
+    .notice {
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      box-shadow: 0 8px 22px rgba(43, 43, 43, 0.06);
+    }
+
+    .notice { background: var(--orange-light); }
+
+    .card h3,
+    .notice h3 {
+      margin-top: 0;
+    }
+
+    .notice p { margin-bottom: 0; }
+
+    .contact {
+      background: var(--teal-dark);
+      color: #ffffff;
+      border-radius: 28px;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact h2 { color: #ffffff; }
+
+    .contact a {
+      color: #ffffff;
+      font-weight: 800;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 5%;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+    }
+
+    @media (max-width: 780px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 1rem;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 3rem;
+      }
+
+      .cards,
+      .details-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">R.H. Pet Care</div>
+    <nav aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#details">Details</a>
+      <a href="#animals">Animals</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="eyebrow">Pet care for busy days and time away</span>
+        <h1>Reliable walks and drop-in visits for pets of all kinds.</h1>
+        <p>
+          R.H. Pet Care provides professional pet walking and drop-in visits throughout West Hempfield Township, offering dependable care for dogs, cats, goats, chickens, and other animals.
+        </p>
+        <a class="button" href="#contact">Request a Visit</a>
+      </div>
+
+      <aside class="hero-card">
+        <div class="pet-accent" aria-hidden="true">Pets</div>
+        <h2>Care you can count on</h2>
+        <p>Thoughtful support for your pet’s routine, comfort, and safety.</p>
+        <ul class="highlight-list">
+          <li>Pet walking</li>
+          <li>Drop-in visits</li>
+          <li>Feeding, water refreshes, and check-ins</li>
+          <li>Care instructions followed carefully</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Pet Walking</h3>
+          <p>Scheduled walks to help pets get exercise, bathroom breaks, fresh air, and attention during the day.</p>
+        </article>
+
+        <article class="card">
+          <h3>Drop-In Visits</h3>
+          <p>Reliable visits for feeding, water, litter or cleanup needs, outdoor breaks, and companionship.</p>
+        </article>
+
+        <article class="card">
+          <h3>Routine Care</h3>
+          <p>Care based on your instructions so your pet’s normal schedule stays as consistent as possible.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="details">
+      <h2>Service Details</h2>
+      <div class="details-grid">
+        <div class="notice">
+          <h3>Hours</h3>
+          <p>Available Tuesday through Sunday, from dawn to dusk.</p>
+        </div>
+
+        <div class="notice">
+          <h3>Scheduling Policy</h3>
+          <p>Please schedule or cancel visits at least one day in advance.</p>
+        </div>
+
+        <div class="notice">
+          <h3>Service Area</h3>
+          <p>Serving West Hempfield Township.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="animals">
+      <h2>Pets and Animals</h2>
+      <p>
+        R.H. Pet Care welcomes dogs, cats, goats, chickens, and other animals by request. If your pet or animal has special routines, feeding needs, medication instructions, or handling preferences, those details can be reviewed before scheduling.
+      </p>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <h2>Contact R.H. Pet Care</h2>
+        <p>Ready to schedule a walk or drop-in visit? Email is preferred, but phone contact is also available.</p>
+        <p><strong>Email (preferred):</strong> <a href="mailto:rachel@ninja-neer.net">rachel@ninja-neer.net</a></p>
+        <p><strong>Phone:</strong> <a href="tel:7178929566">717-892-9566</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 R.H. Pet Care. All rights reserved.</p>
+  </footer>
+</body>
+</html>
