@@ -21,13 +21,9 @@
       --shadow: 0 20px 45px rgba(33, 72, 63, 0.14);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -37,15 +33,7 @@
       background: var(--cream);
     }
 
-    img,
-    svg {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-    }
+    a { color: inherit; }
 
     header {
       position: sticky;
@@ -102,16 +90,13 @@
       font-size: 0.95rem;
     }
 
-    nav a:hover {
-      color: var(--clay);
-    }
+    nav a:hover { color: var(--clay); }
 
     .button,
     button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 0.5rem;
       background: var(--forest);
       color: var(--white);
       padding: 0.9rem 1.25rem;
@@ -125,9 +110,7 @@
     }
 
     .button:hover,
-    button:hover {
-      background: var(--forest-2);
-    }
+    button:hover { background: var(--forest-2); }
 
     .button.secondary {
       background: var(--white);
@@ -159,12 +142,7 @@
       letter-spacing: 0.1em;
     }
 
-    h1,
-    h2,
-    h3 {
-      color: var(--forest-2);
-      line-height: 1.1;
-    }
+    h1, h2, h3 { color: var(--forest-2); line-height: 1.1; }
 
     h1 {
       margin: 0 0 1rem;
@@ -178,10 +156,7 @@
       letter-spacing: -0.04em;
     }
 
-    h3 {
-      margin: 0 0 0.65rem;
-      font-size: 1.35rem;
-    }
+    h3 { margin: 0 0 0.65rem; font-size: 1.35rem; }
 
     .hero-text p {
       margin: 0 0 1.5rem;
@@ -202,9 +177,7 @@
       min-height: 470px;
       border-radius: 34px;
       overflow: hidden;
-      background:
-        linear-gradient(160deg, rgba(33, 72, 63, 0.05), rgba(184, 107, 69, 0.08)),
-        var(--sand);
+      background: linear-gradient(160deg, rgba(33, 72, 63, 0.05), rgba(184, 107, 69, 0.08)), var(--sand);
       box-shadow: var(--shadow);
       border: 1px solid rgba(222, 216, 207, 0.9);
     }
@@ -237,14 +210,9 @@
       margin-bottom: 0.25rem;
     }
 
-    .visual-card span {
-      color: var(--muted);
-    }
+    .visual-card span { color: var(--muted); }
 
-    .leash-scene {
-      position: absolute;
-      inset: 0;
-    }
+    .leash-scene { position: absolute; inset: 0; }
 
     .sun {
       position: absolute;
@@ -390,6 +358,86 @@
       transform: rotate(45deg);
     }
 
+    .small-goat {
+      position: absolute;
+      left: 4.1rem;
+      bottom: 8.9rem;
+      width: 7.4rem;
+      height: 5rem;
+      opacity: 0.96;
+    }
+
+    .small-goat .body {
+      position: absolute;
+      left: 1.1rem;
+      bottom: 1rem;
+      width: 4.8rem;
+      height: 2.35rem;
+      border-radius: 1.8rem 1.5rem 1.2rem 1.2rem;
+      background: #f2eee4;
+      border: 2px solid rgba(33, 72, 63, 0.14);
+    }
+
+    .small-goat .head {
+      position: absolute;
+      right: 0.4rem;
+      bottom: 2.55rem;
+      width: 2rem;
+      height: 1.95rem;
+      border-radius: 45% 50% 45% 50%;
+      background: #f2eee4;
+      border: 2px solid rgba(33, 72, 63, 0.14);
+    }
+
+    .small-goat .ear {
+      position: absolute;
+      width: 0.72rem;
+      height: 1rem;
+      border-radius: 999px;
+      background: #cbb59e;
+      top: 0.8rem;
+    }
+
+    .small-goat .ear.left { right: 2rem; transform: rotate(-32deg); }
+    .small-goat .ear.right { right: 0.25rem; transform: rotate(32deg); }
+
+    .small-goat .mark {
+      position: absolute;
+      width: 0.34rem;
+      height: 1rem;
+      border-radius: 999px;
+      background: #685644;
+      top: 0.12rem;
+    }
+
+    .small-goat .mark.left { right: 1.5rem; transform: rotate(-18deg); }
+    .small-goat .mark.right { right: 0.86rem; transform: rotate(18deg); }
+
+    .small-goat .leg {
+      position: absolute;
+      bottom: 0.15rem;
+      width: 0.42rem;
+      height: 1.35rem;
+      border-radius: 999px;
+      background: #7d6958;
+    }
+
+    .small-goat .leg.one { left: 2rem; }
+    .small-goat .leg.two { left: 3.8rem; }
+    .small-goat .leg.three { left: 5.1rem; }
+
+    .small-goat .tail {
+      position: absolute;
+      left: 0.65rem;
+      bottom: 3.05rem;
+      width: 1.1rem;
+      height: 0.45rem;
+      border-radius: 999px;
+      background: #f2eee4;
+      transform: rotate(-25deg);
+      border: 1px solid rgba(33, 72, 63, 0.12);
+    }
+
     .leash {
       position: absolute;
       left: 37%;
@@ -408,49 +456,27 @@
       padding: 4rem 5%;
     }
 
-    .section-intro {
-      max-width: 720px;
-      margin-bottom: 2rem;
-    }
+    .section-intro { max-width: 720px; margin-bottom: 2rem; }
+    .section-intro p { margin: 0; color: var(--muted); font-size: 1.08rem; }
 
-    .section-intro p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.08rem;
-    }
-
-    .trust-grid {
+    .trust-grid, .service-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
     }
 
-    .trust-card {
+    .trust-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+
+    .trust-card, .service-card {
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 1.35rem;
       box-shadow: 0 10px 24px rgba(33, 72, 63, 0.06);
     }
 
-    .trust-card span {
-      display: block;
-      width: 2.5rem;
-      height: 0.35rem;
-      border-radius: 999px;
-      background: var(--clay);
-      margin-bottom: 1rem;
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.25rem;
-    }
+    .trust-card { border-radius: 22px; padding: 1.35rem; }
+    .trust-card span { display: block; width: 2.5rem; height: 0.35rem; border-radius: 999px; background: var(--clay); margin-bottom: 1rem; }
 
     .service-card {
-      background: var(--white);
-      border: 1px solid var(--border);
       border-radius: 28px;
       padding: 2rem;
       box-shadow: var(--shadow);
@@ -460,20 +486,9 @@
       justify-content: space-between;
     }
 
-    .service-card p {
-      color: var(--muted);
-      margin: 0 0 1.25rem;
-    }
-
-    .service-card ul {
-      margin: 0;
-      padding-left: 1.15rem;
-      color: var(--text);
-    }
-
-    .service-card li::marker {
-      color: var(--clay);
-    }
+    .service-card p { color: var(--muted); margin: 0 0 1.25rem; }
+    .service-card ul { margin: 0; padding-left: 1.15rem; color: var(--text); }
+    .service-card li::marker { color: var(--clay); }
 
     .details-panel {
       background: var(--forest-2);
@@ -486,19 +501,10 @@
       align-items: center;
     }
 
-    .details-panel h2 {
-      color: var(--white);
-    }
+    .details-panel h2 { color: var(--white); }
+    .details-panel p { color: rgba(255, 255, 255, 0.78); margin: 0; }
 
-    .details-panel p {
-      color: rgba(255, 255, 255, 0.78);
-      margin: 0;
-    }
-
-    .details-list {
-      display: grid;
-      gap: 0.85rem;
-    }
+    .details-list { display: grid; gap: 0.85rem; }
 
     .detail-item {
       background: rgba(255, 255, 255, 0.1);
@@ -507,11 +513,7 @@
       padding: 1rem;
     }
 
-    .detail-item strong {
-      display: block;
-      color: var(--white);
-      margin-bottom: 0.25rem;
-    }
+    .detail-item strong { display: block; color: var(--white); margin-bottom: 0.25rem; }
 
     .animal-section {
       display: grid;
@@ -520,10 +522,7 @@
       align-items: center;
     }
 
-    .animal-copy p {
-      color: var(--muted);
-      margin: 0 0 1.25rem;
-    }
+    .animal-copy p { color: var(--muted); margin: 0 0 1.25rem; }
 
     .animal-tags {
       display: flex;
@@ -559,17 +558,8 @@
       padding: 1.25rem;
     }
 
-    .animal-card strong {
-      display: block;
-      color: var(--forest-2);
-      font-size: 1.2rem;
-      margin-bottom: 0.35rem;
-    }
-
-    .animal-card p {
-      margin: 0;
-      color: var(--muted);
-    }
+    .animal-card strong { display: block; color: var(--forest-2); font-size: 1.2rem; margin-bottom: 0.35rem; }
+    .animal-card p { margin: 0; color: var(--muted); }
 
     .contact {
       background: var(--white);
@@ -591,19 +581,9 @@
       gap: 2rem;
     }
 
-    .contact-info h2 {
-      color: var(--white);
-    }
-
-    .contact-info p {
-      margin: 0 0 1rem;
-      color: rgba(255, 255, 255, 0.78);
-    }
-
-    .contact-info a {
-      color: var(--white);
-      font-weight: 900;
-    }
+    .contact-info h2 { color: var(--white); }
+    .contact-info p { margin: 0 0 1rem; color: rgba(255, 255, 255, 0.78); }
+    .contact-info a { color: var(--white); font-weight: 900; }
 
     .home-scene {
       position: relative;
@@ -627,67 +607,18 @@
       box-shadow: 0 12px 28px rgba(22, 53, 47, 0.12);
     }
 
-    .window::before,
-    .window::after {
-      content: "";
-      position: absolute;
-      background: rgba(33, 72, 63, 0.12);
-    }
+    .window::before, .window::after { content: ""; position: absolute; background: rgba(33, 72, 63, 0.12); }
+    .window::before { left: 50%; top: 0; bottom: 0; width: 2px; }
+    .window::after { left: 0; right: 0; top: 50%; height: 2px; }
 
-    .window::before {
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-    }
+    .plant { position: absolute; right: 1.6rem; top: 2.4rem; width: 3.6rem; height: 7rem; }
+    .plant::before { content: ""; position: absolute; left: 1.35rem; bottom: 1.7rem; width: 0.35rem; height: 4rem; border-radius: 999px; background: var(--forest); }
 
-    .window::after {
-      left: 0;
-      right: 0;
-      top: 50%;
-      height: 2px;
-    }
-
-    .plant {
-      position: absolute;
-      right: 1.6rem;
-      top: 2.4rem;
-      width: 3.6rem;
-      height: 7rem;
-    }
-
-    .plant::before {
-      content: "";
-      position: absolute;
-      left: 1.35rem;
-      bottom: 1.7rem;
-      width: 0.35rem;
-      height: 4rem;
-      border-radius: 999px;
-      background: var(--forest);
-    }
-
-    .leaf {
-      position: absolute;
-      width: 1.8rem;
-      height: 2.6rem;
-      border-radius: 100% 0 100% 0;
-      background: #2e6154;
-    }
-
+    .leaf { position: absolute; width: 1.8rem; height: 2.6rem; border-radius: 100% 0 100% 0; background: #2e6154; }
     .leaf.one { left: 0.2rem; top: 0.7rem; transform: rotate(-28deg); }
     .leaf.two { right: 0.2rem; top: 1.2rem; transform: rotate(34deg) scaleX(-1); }
     .leaf.three { left: 0.6rem; top: 2.5rem; transform: rotate(-40deg); }
-
-    .pot {
-      position: absolute;
-      left: 0.75rem;
-      bottom: 0;
-      width: 2.8rem;
-      height: 2rem;
-      background: var(--clay);
-      border-radius: 0.35rem 0.35rem 1rem 1rem;
-    }
+    .pot { position: absolute; left: 0.75rem; bottom: 0; width: 2.8rem; height: 2rem; background: var(--clay); border-radius: 0.35rem 0.35rem 1rem 1rem; }
 
     .pet-bed {
       position: absolute;
@@ -701,90 +632,24 @@
       box-shadow: inset 0 -0.75rem 0 rgba(111, 73, 56, 0.18);
     }
 
-    .resting-dog {
-      position: absolute;
-      left: 50%;
-      bottom: 2.7rem;
-      transform: translateX(-50%);
-      width: 8.8rem;
-      height: 4.6rem;
-    }
+    .resting-cat { position: absolute; left: 50%; bottom: 2.75rem; transform: translateX(-50%); width: 8.4rem; height: 4.8rem; }
+    .cat-body { position: absolute; left: 1.05rem; bottom: 0.45rem; width: 5.7rem; height: 2.7rem; border-radius: 2.4rem 2.2rem 1.45rem 1.45rem; background: #6f756f; box-shadow: inset 0 -0.55rem 0 rgba(22, 53, 47, 0.12); }
+    .cat-head { position: absolute; right: 0.65rem; bottom: 1.7rem; width: 2.55rem; height: 2.45rem; border-radius: 50%; background: #59605a; }
+    .cat-ear { position: absolute; width: 0; height: 0; border-left: 0.55rem solid transparent; border-right: 0.55rem solid transparent; border-bottom: 1.25rem solid #59605a; bottom: 3.65rem; }
+    .cat-ear.one { right: 2.35rem; transform: rotate(-18deg); }
+    .cat-ear.two { right: 0.75rem; transform: rotate(18deg); }
+    .cat-tail { position: absolute; left: 0.15rem; bottom: 2.5rem; width: 3.1rem; height: 0.55rem; border-radius: 999px; background: #59605a; transform: rotate(-28deg); transform-origin: right center; }
+    .cat-stripe { position: absolute; width: 0.28rem; height: 1.45rem; border-radius: 999px; background: rgba(255, 255, 255, 0.18); bottom: 1.45rem; }
+    .cat-stripe.one { left: 2.35rem; transform: rotate(12deg); }
+    .cat-stripe.two { left: 3.35rem; transform: rotate(8deg); }
+    .cat-stripe.three { left: 4.35rem; transform: rotate(10deg); }
 
-    .rest-body {
-      position: absolute;
-      left: 1.2rem;
-      bottom: 0.5rem;
-      width: 5.7rem;
-      height: 2.7rem;
-      border-radius: 2rem 2.2rem 1.4rem 1.4rem;
-      background: var(--clay);
-    }
+    .contact-form { padding: 2.25rem; background: var(--white); }
+    .contact-form h3 { margin-bottom: 1rem; }
+    .form-row { display: grid; gap: 0.35rem; margin-bottom: 1rem; }
+    label { font-weight: 900; color: var(--forest-2); }
 
-    .rest-head {
-      position: absolute;
-      right: 0.6rem;
-      bottom: 1.55rem;
-      width: 2.55rem;
-      height: 2.4rem;
-      border-radius: 48% 52% 50% 50%;
-      background: var(--clay-dark);
-    }
-
-    .rest-ear {
-      position: absolute;
-      right: 2.5rem;
-      bottom: 2.25rem;
-      width: 1.1rem;
-      height: 1.8rem;
-      border-radius: 1rem;
-      background: #74432c;
-      transform: rotate(18deg);
-    }
-
-    .rest-tail {
-      position: absolute;
-      left: 0.2rem;
-      bottom: 2.45rem;
-      width: 2.3rem;
-      height: 0.55rem;
-      border-radius: 999px;
-      background: var(--clay-dark);
-      transform: rotate(-20deg);
-    }
-
-    .home-scene-card {
-      position: absolute;
-      left: 1rem;
-      right: 1rem;
-      bottom: 0.9rem;
-      transform: translateY(100%);
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .contact-form {
-      padding: 2.25rem;
-      background: var(--white);
-    }
-
-    .contact-form h3 {
-      margin-bottom: 1rem;
-    }
-
-    .form-row {
-      display: grid;
-      gap: 0.35rem;
-      margin-bottom: 1rem;
-    }
-
-    label {
-      font-weight: 900;
-      color: var(--forest-2);
-    }
-
-    input,
-    select,
-    textarea {
+    input, select, textarea {
       width: 100%;
       border: 1px solid var(--border);
       border-radius: 14px;
@@ -794,99 +659,30 @@
       background: #ffffff;
     }
 
-    textarea {
-      min-height: 132px;
-      resize: vertical;
-    }
+    textarea { min-height: 132px; resize: vertical; }
+    input:focus, select:focus, textarea:focus { outline: 3px solid rgba(184, 107, 69, 0.24); border-color: var(--clay); }
+    .form-note { color: var(--muted); font-size: 0.95rem; margin: 0.8rem 0 0; }
 
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: 3px solid rgba(184, 107, 69, 0.24);
-      border-color: var(--clay);
-    }
-
-    .form-note {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin: 0.8rem 0 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 5%;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-      background: var(--white);
-    }
+    footer { text-align: center; padding: 2rem 5%; color: var(--muted); border-top: 1px solid var(--border); background: var(--white); }
 
     @media (max-width: 860px) {
-      .hero,
-      .details-panel,
-      .animal-section,
-      .contact {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 3.5rem;
-      }
-
-      .hero-visual {
-        min-height: 390px;
-      }
-
-      .trust-grid,
-      .service-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .home-scene {
-        max-width: 440px;
-      }
+      .hero, .details-panel, .animal-section, .contact { grid-template-columns: 1fr; }
+      .hero { padding-top: 3.5rem; }
+      .hero-visual { min-height: 390px; }
+      .trust-grid, .service-grid { grid-template-columns: 1fr; }
+      .home-scene { max-width: 440px; }
     }
 
     @media (max-width: 640px) {
-      .nav-wrap {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      nav {
-        justify-content: flex-start;
-      }
-
-      .hero,
-      .section {
-        padding-left: 1.1rem;
-        padding-right: 1.1rem;
-      }
-
-      .hero-visual {
-        min-height: 330px;
-      }
-
-      .person {
-        left: 18%;
-        transform: scale(0.82);
-      }
-
-      .dog {
-        right: 8%;
-        transform: scale(0.82);
-      }
-
-      .dog-bubble {
-        right: 2.5rem;
-        top: 5.7rem;
-      }
-
-      .contact-info,
-      .contact-form,
-      .details-panel,
-      .service-card {
-        padding: 1.5rem;
-      }
+      .nav-wrap { align-items: flex-start; flex-direction: column; }
+      nav { justify-content: flex-start; }
+      .hero, .section { padding-left: 1.1rem; padding-right: 1.1rem; }
+      .hero-visual { min-height: 330px; }
+      .person { left: 18%; transform: scale(0.82); }
+      .dog { right: 8%; transform: scale(0.82); }
+      .small-goat { left: 1.8rem; bottom: 7.2rem; transform: scale(0.74); }
+      .dog-bubble { right: 2.5rem; top: 5.7rem; }
+      .contact-info, .contact-form, .details-panel, .service-card { padding: 1.5rem; }
     }
   </style>
 </head>
@@ -911,172 +707,62 @@
       <div class="hero-text">
         <span class="eyebrow">Pet walking and drop-in visits</span>
         <h1>Reliable care for the pets who count on you.</h1>
-        <p>
-          R.H. Pet Care helps keep your pet's day steady with dependable walks, drop-in visits, feeding, water refreshes, and routine care while you are away.
-        </p>
+        <p>R.H. Pet Care helps keep your pet's day steady with dependable walks, drop-in visits, feeding, water refreshes, and routine care while you are away.</p>
         <div class="hero-actions">
           <a class="button" href="#contact">Request a Visit</a>
           <a class="button secondary" href="tel:7178929566">Call 717-892-9566</a>
         </div>
       </div>
 
-      <div class="hero-visual" aria-label="Illustration of a dog walk">
+      <div class="hero-visual" aria-label="Illustration of a dog walk with a goat nearby">
         <div class="leash-scene" aria-hidden="true">
           <div class="sun"></div>
           <div class="path"></div>
-          <div class="person">
-            <div class="head"></div>
-            <div class="body"></div>
-            <div class="legs"></div>
-          </div>
+          <div class="person"><div class="head"></div><div class="body"></div><div class="legs"></div></div>
+          <div class="small-goat"><div class="tail"></div><div class="body"></div><div class="ear left"></div><div class="ear right"></div><div class="mark left"></div><div class="mark right"></div><div class="head"></div><div class="leg one"></div><div class="leg two"></div><div class="leg three"></div></div>
           <div class="leash"></div>
           <div class="dog-bubble">Woof</div>
-          <div class="dog">
-            <div class="dog-tail"></div>
-            <div class="dog-body"></div>
-            <div class="dog-ear"></div>
-            <div class="dog-head"></div>
-            <div class="dog-leg one"></div>
-            <div class="dog-leg two"></div>
-            <div class="dog-leg three"></div>
-          </div>
+          <div class="dog"><div class="dog-tail"></div><div class="dog-body"></div><div class="dog-ear"></div><div class="dog-head"></div><div class="dog-leg one"></div><div class="dog-leg two"></div><div class="dog-leg three"></div></div>
         </div>
-        <div class="visual-card">
-          <strong>Care that fits your pet's routine</strong>
-          <span>Walks, check-ins, feeding, water, and attention based on your instructions.</span>
-        </div>
+        <div class="visual-card"><strong>Care that fits your pet's routine</strong><span>Walks, check-ins, feeding, water, and attention based on your instructions.</span></div>
       </div>
     </section>
 
     <section class="section" aria-label="Why choose R.H. Pet Care">
       <div class="trust-grid">
-        <article class="trust-card">
-          <span aria-hidden="true"></span>
-          <h3>Local and reliable</h3>
-          <p>Serving West Hempfield Township with dependable care for busy days, work schedules, and time away.</p>
-        </article>
-        <article class="trust-card">
-          <span aria-hidden="true"></span>
-          <h3>Routine focused</h3>
-          <p>Visits are guided by your instructions so feeding, water, outdoor time, and comfort stay consistent.</p>
-        </article>
-        <article class="trust-card">
-          <span aria-hidden="true"></span>
-          <h3>Clear communication</h3>
-          <p>Share your pet's needs, address, preferred schedule, and care details directly through the contact form.</p>
-        </article>
+        <article class="trust-card"><span aria-hidden="true"></span><h3>Local and reliable</h3><p>Serving West Hempfield Township with dependable care for busy days, work schedules, and time away.</p></article>
+        <article class="trust-card"><span aria-hidden="true"></span><h3>Routine focused</h3><p>Visits are guided by your instructions so feeding, water, outdoor time, and comfort stay consistent.</p></article>
+        <article class="trust-card"><span aria-hidden="true"></span><h3>Clear communication</h3><p>Share your pet's needs, address, preferred schedule, and care details directly through the contact form.</p></article>
       </div>
     </section>
 
     <section class="section" id="services">
-      <div class="section-intro">
-        <h2>Simple, focused services</h2>
-        <p>R.H. Pet Care keeps the service list clear so each visit is easy to schedule and easy to understand.</p>
-      </div>
-
+      <div class="section-intro"><h2>Simple, focused services</h2><p>R.H. Pet Care keeps the service list clear so each visit is easy to schedule and easy to understand.</p></div>
       <div class="service-grid">
-        <article class="service-card">
-          <div>
-            <h3>Pet Walking</h3>
-            <p>Scheduled walks for exercise, bathroom breaks, fresh air, and one-on-one attention during the day.</p>
-          </div>
-          <ul>
-            <li>Neighborhood walks</li>
-            <li>Bathroom breaks</li>
-            <li>Fresh air and movement</li>
-            <li>Instructions followed carefully</li>
-          </ul>
-        </article>
-
-        <article class="service-card">
-          <div>
-            <h3>Drop-In Visits</h3>
-            <p>At-home visits for pets who need food, water, litter or cleanup support, outdoor time, and companionship.</p>
-          </div>
-          <ul>
-            <li>Feeding and water refreshes</li>
-            <li>Check-ins and companionship</li>
-            <li>Litter or basic cleanup needs</li>
-            <li>Outdoor breaks when needed</li>
-          </ul>
-        </article>
+        <article class="service-card"><div><h3>Pet Walking</h3><p>Scheduled walks for exercise, bathroom breaks, fresh air, and one-on-one attention during the day.</p></div><ul><li>Neighborhood walks</li><li>Bathroom breaks</li><li>Fresh air and movement</li><li>Instructions followed carefully</li></ul></article>
+        <article class="service-card"><div><h3>Drop-In Visits</h3><p>At-home visits for pets who need food, water, litter or cleanup support, outdoor time, and companionship.</p></div><ul><li>Feeding and water refreshes</li><li>Check-ins and companionship</li><li>Litter or basic cleanup needs</li><li>Outdoor breaks when needed</li></ul></article>
       </div>
     </section>
 
     <section class="section" id="details">
       <div class="details-panel">
-        <div>
-          <h2>Visit details</h2>
-          <p>Care is available on a clear schedule with advance notice, so visits can be planned properly and pets get the attention they need.</p>
-        </div>
-        <div class="details-list">
-          <div class="detail-item">
-            <strong>Hours</strong>
-            <span>Available Tuesday through Sunday, from dawn to dusk.</span>
-          </div>
-          <div class="detail-item">
-            <strong>Scheduling policy</strong>
-            <span>Please schedule or cancel visits at least one day in advance.</span>
-          </div>
-          <div class="detail-item">
-            <strong>Service area</strong>
-            <span>Serving West Hempfield Township.</span>
-          </div>
-        </div>
+        <div><h2>Visit details</h2><p>Care is available on a clear schedule with advance notice, so visits can be planned properly and pets get the attention they need.</p></div>
+        <div class="details-list"><div class="detail-item"><strong>Hours</strong><span>Available Tuesday through Sunday, from dawn to dusk.</span></div><div class="detail-item"><strong>Scheduling policy</strong><span>Please schedule or cancel visits at least one day in advance.</span></div><div class="detail-item"><strong>Service area</strong><span>Serving West Hempfield Township.</span></div></div>
       </div>
     </section>
 
     <section class="section" id="animals">
       <div class="animal-section">
-        <div class="animal-copy">
-          <h2>More than dogs and cats</h2>
-          <p>
-            R.H. Pet Care welcomes dogs, cats, goats, chickens, and other animals by request for pet walking and drop-in visits. Share routines, feeding needs, medication instructions, handling preferences, and anything else that helps your animals feel comfortable.
-          </p>
-          <div class="animal-tags" aria-label="Animals served">
-            <span>Dogs</span>
-            <span>Cats</span>
-            <span>Goats</span>
-            <span>Chickens</span>
-            <span>Other animals by request</span>
-          </div>
-        </div>
-
-        <div class="animal-card">
-          <div>
-            <strong>Built around your instructions</strong>
-            <p>Every visit starts with the details you provide, including location, timing, pet behavior, routines, and care preferences.</p>
-          </div>
-        </div>
+        <div class="animal-copy"><h2>More than dogs and cats</h2><p>R.H. Pet Care welcomes dogs, cats, goats, chickens, and other animals by request for pet walking and drop-in visits. Share routines, feeding needs, medication instructions, handling preferences, and anything else that helps your animals feel comfortable.</p><div class="animal-tags" aria-label="Animals served"><span>Dogs</span><span>Cats</span><span>Goats</span><span>Chickens</span><span>Other animals by request</span></div></div>
+        <div class="animal-card"><div><strong>Built around your instructions</strong><p>Every visit starts with the details you provide, including location, timing, pet behavior, routines, and care preferences.</p></div></div>
       </div>
     </section>
 
     <section class="section" id="contact">
       <div class="contact">
         <div class="contact-info">
-          <div>
-            <h2>Request a visit</h2>
-            <p>Send the form and the details will be delivered by email. Include your address, requested service, preferred dates, and anything important about your pet's care.</p>
-            <p><strong>Email:</strong> <a href="mailto:rachel@ninja-neer.net">rachel@ninja-neer.net</a></p>
-            <p><strong>Phone:</strong> <a href="tel:7178929566">717-892-9566</a></p>
-          </div>
-
-          <div class="home-scene" aria-label="Illustration of a dog resting at home">
-            <div class="window" aria-hidden="true"></div>
-            <div class="plant" aria-hidden="true">
-              <span class="leaf one"></span>
-              <span class="leaf two"></span>
-              <span class="leaf three"></span>
-              <span class="pot"></span>
-            </div>
-            <div class="pet-bed" aria-hidden="true"></div>
-            <div class="resting-dog" aria-hidden="true">
-              <div class="rest-tail"></div>
-              <div class="rest-body"></div>
-              <div class="rest-ear"></div>
-              <div class="rest-head"></div>
-            </div>
-          </div>
+          <div><h2>Request a visit</h2><p>Send the form and the details will be delivered by email. Include your address, requested service, preferred dates, and anything important about your pet's care.</p><p><strong>Email:</strong> <a href="mailto:rachel@ninja-neer.net">rachel@ninja-neer.net</a></p><p><strong>Phone:</strong> <a href="tel:7178929566">717-892-9566</a></p></div>
+          <div class="home-scene" aria-label="Illustration of a cat resting at home"><div class="window" aria-hidden="true"></div><div class="plant" aria-hidden="true"><span class="leaf one"></span><span class="leaf two"></span><span class="leaf three"></span><span class="pot"></span></div><div class="pet-bed" aria-hidden="true"></div><div class="resting-cat" aria-hidden="true"><div class="cat-tail"></div><div class="cat-body"></div><div class="cat-stripe one"></div><div class="cat-stripe two"></div><div class="cat-stripe three"></div><div class="cat-ear one"></div><div class="cat-ear two"></div><div class="cat-head"></div></div></div>
         </div>
 
         <form class="contact-form" action="https://formsubmit.co/rachel@ninja-neer.net" method="POST">
@@ -1084,40 +770,12 @@
           <input type="hidden" name="_subject" value="New R.H. Pet Care Contact Form Submission" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
-
-          <div class="form-row">
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" autocomplete="name" required />
-          </div>
-
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" autocomplete="email" required />
-          </div>
-
-          <div class="form-row">
-            <label for="phone">Phone</label>
-            <input id="phone" type="tel" name="phone" autocomplete="tel" />
-          </div>
-
-          <div class="form-row">
-            <label for="address">Address</label>
-            <input id="address" type="text" name="address" autocomplete="street-address" required />
-          </div>
-
-          <div class="form-row">
-            <label for="service">Service Needed</label>
-            <select id="service" name="service">
-              <option value="Pet walking">Pet walking</option>
-              <option value="Drop-in visit">Drop-in visit</option>
-            </select>
-          </div>
-
-          <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about your pet, preferred dates, care routine, and anything important to know before the visit." required></textarea>
-          </div>
-
+          <div class="form-row"><label for="name">Name</label><input id="name" type="text" name="name" autocomplete="name" required /></div>
+          <div class="form-row"><label for="email">Email</label><input id="email" type="email" name="email" autocomplete="email" required /></div>
+          <div class="form-row"><label for="phone">Phone</label><input id="phone" type="tel" name="phone" autocomplete="tel" /></div>
+          <div class="form-row"><label for="address">Address</label><input id="address" type="text" name="address" autocomplete="street-address" required /></div>
+          <div class="form-row"><label for="service">Service Needed</label><select id="service" name="service"><option value="Pet walking">Pet walking</option><option value="Drop-in visit">Drop-in visit</option></select></div>
+          <div class="form-row"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me about your pet, preferred dates, care routine, and anything important to know before the visit." required></textarea></div>
           <button type="submit">Send Message</button>
           <p class="form-note">You can also email or call directly using the contact information listed here.</p>
         </form>
@@ -1125,8 +783,6 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 R.H. Pet Care. All rights reserved.</p>
-  </footer>
+  <footer><p>&copy; 2026 R.H. Pet Care. All rights reserved.</p></footer>
 </body>
 </html>
