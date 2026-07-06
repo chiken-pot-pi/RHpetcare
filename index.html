@@ -362,6 +362,34 @@
     .dog-leg.two { left: 5.1rem; }
     .dog-leg.three { left: 6.7rem; }
 
+    .dog-bubble {
+      position: absolute;
+      right: 4.2rem;
+      top: 7.4rem;
+      background: var(--white);
+      color: var(--forest-2);
+      border: 2px solid rgba(33, 72, 63, 0.22);
+      border-radius: 999px;
+      padding: 0.55rem 0.9rem;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      transform: rotate(-7deg);
+      box-shadow: 0 12px 26px rgba(33, 72, 63, 0.12);
+    }
+
+    .dog-bubble::after {
+      content: "";
+      position: absolute;
+      left: 1.2rem;
+      bottom: -0.55rem;
+      width: 0.95rem;
+      height: 0.95rem;
+      background: var(--white);
+      border-right: 2px solid rgba(33, 72, 63, 0.22);
+      border-bottom: 2px solid rgba(33, 72, 63, 0.22);
+      transform: rotate(45deg);
+    }
+
     .leash {
       position: absolute;
       left: 37%;
@@ -557,6 +585,10 @@
       background: var(--forest);
       color: var(--white);
       padding: 2.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 2rem;
     }
 
     .contact-info h2 {
@@ -571,6 +603,163 @@
     .contact-info a {
       color: var(--white);
       font-weight: 900;
+    }
+
+    .home-scene {
+      position: relative;
+      min-height: 230px;
+      border-radius: 26px;
+      overflow: hidden;
+      background: linear-gradient(145deg, #f5ead9, #d8e4dc);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+    }
+
+    .window {
+      position: absolute;
+      left: 1.35rem;
+      top: 1.25rem;
+      width: 7.4rem;
+      height: 6.1rem;
+      border-radius: 1rem;
+      background: linear-gradient(180deg, #dcefe8, #f8fbf7);
+      border: 0.45rem solid rgba(255, 255, 255, 0.78);
+      box-shadow: 0 12px 28px rgba(22, 53, 47, 0.12);
+    }
+
+    .window::before,
+    .window::after {
+      content: "";
+      position: absolute;
+      background: rgba(33, 72, 63, 0.12);
+    }
+
+    .window::before {
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+    }
+
+    .window::after {
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 2px;
+    }
+
+    .plant {
+      position: absolute;
+      right: 1.6rem;
+      top: 2.4rem;
+      width: 3.6rem;
+      height: 7rem;
+    }
+
+    .plant::before {
+      content: "";
+      position: absolute;
+      left: 1.35rem;
+      bottom: 1.7rem;
+      width: 0.35rem;
+      height: 4rem;
+      border-radius: 999px;
+      background: var(--forest);
+    }
+
+    .leaf {
+      position: absolute;
+      width: 1.8rem;
+      height: 2.6rem;
+      border-radius: 100% 0 100% 0;
+      background: #2e6154;
+    }
+
+    .leaf.one { left: 0.2rem; top: 0.7rem; transform: rotate(-28deg); }
+    .leaf.two { right: 0.2rem; top: 1.2rem; transform: rotate(34deg) scaleX(-1); }
+    .leaf.three { left: 0.6rem; top: 2.5rem; transform: rotate(-40deg); }
+
+    .pot {
+      position: absolute;
+      left: 0.75rem;
+      bottom: 0;
+      width: 2.8rem;
+      height: 2rem;
+      background: var(--clay);
+      border-radius: 0.35rem 0.35rem 1rem 1rem;
+    }
+
+    .pet-bed {
+      position: absolute;
+      left: 50%;
+      bottom: 1.15rem;
+      transform: translateX(-50%);
+      width: 12rem;
+      height: 4.3rem;
+      border-radius: 50%;
+      background: #c7a784;
+      box-shadow: inset 0 -0.75rem 0 rgba(111, 73, 56, 0.18);
+    }
+
+    .resting-dog {
+      position: absolute;
+      left: 50%;
+      bottom: 2.7rem;
+      transform: translateX(-50%);
+      width: 8.8rem;
+      height: 4.6rem;
+    }
+
+    .rest-body {
+      position: absolute;
+      left: 1.2rem;
+      bottom: 0.5rem;
+      width: 5.7rem;
+      height: 2.7rem;
+      border-radius: 2rem 2.2rem 1.4rem 1.4rem;
+      background: var(--clay);
+    }
+
+    .rest-head {
+      position: absolute;
+      right: 0.6rem;
+      bottom: 1.55rem;
+      width: 2.55rem;
+      height: 2.4rem;
+      border-radius: 48% 52% 50% 50%;
+      background: var(--clay-dark);
+    }
+
+    .rest-ear {
+      position: absolute;
+      right: 2.5rem;
+      bottom: 2.25rem;
+      width: 1.1rem;
+      height: 1.8rem;
+      border-radius: 1rem;
+      background: #74432c;
+      transform: rotate(18deg);
+    }
+
+    .rest-tail {
+      position: absolute;
+      left: 0.2rem;
+      bottom: 2.45rem;
+      width: 2.3rem;
+      height: 0.55rem;
+      border-radius: 999px;
+      background: var(--clay-dark);
+      transform: rotate(-20deg);
+    }
+
+    .home-scene-card {
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 0.9rem;
+      transform: translateY(100%);
+      opacity: 0;
+      pointer-events: none;
     }
 
     .contact-form {
@@ -651,6 +840,10 @@
       .service-grid {
         grid-template-columns: 1fr;
       }
+
+      .home-scene {
+        max-width: 440px;
+      }
     }
 
     @media (max-width: 640px) {
@@ -681,6 +874,11 @@
       .dog {
         right: 8%;
         transform: scale(0.82);
+      }
+
+      .dog-bubble {
+        right: 2.5rem;
+        top: 5.7rem;
       }
 
       .contact-info,
@@ -732,6 +930,7 @@
             <div class="legs"></div>
           </div>
           <div class="leash"></div>
+          <div class="dog-bubble">Woof</div>
           <div class="dog">
             <div class="dog-tail"></div>
             <div class="dog-body"></div>
@@ -855,10 +1054,29 @@
     <section class="section" id="contact">
       <div class="contact">
         <div class="contact-info">
-          <h2>Request a visit</h2>
-          <p>Send the form and the details will be delivered by email. Include your address, requested service, preferred dates, and anything important about your pet's care.</p>
-          <p><strong>Email:</strong> <a href="mailto:rachel@ninja-neer.net">rachel@ninja-neer.net</a></p>
-          <p><strong>Phone:</strong> <a href="tel:7178929566">717-892-9566</a></p>
+          <div>
+            <h2>Request a visit</h2>
+            <p>Send the form and the details will be delivered by email. Include your address, requested service, preferred dates, and anything important about your pet's care.</p>
+            <p><strong>Email:</strong> <a href="mailto:rachel@ninja-neer.net">rachel@ninja-neer.net</a></p>
+            <p><strong>Phone:</strong> <a href="tel:7178929566">717-892-9566</a></p>
+          </div>
+
+          <div class="home-scene" aria-label="Illustration of a dog resting at home">
+            <div class="window" aria-hidden="true"></div>
+            <div class="plant" aria-hidden="true">
+              <span class="leaf one"></span>
+              <span class="leaf two"></span>
+              <span class="leaf three"></span>
+              <span class="pot"></span>
+            </div>
+            <div class="pet-bed" aria-hidden="true"></div>
+            <div class="resting-dog" aria-hidden="true">
+              <div class="rest-tail"></div>
+              <div class="rest-body"></div>
+              <div class="rest-ear"></div>
+              <div class="rest-head"></div>
+            </div>
+          </div>
         </div>
 
         <form class="contact-form" action="https://formsubmit.co/rachel@ninja-neer.net" method="POST">
