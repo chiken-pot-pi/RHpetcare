@@ -150,6 +150,9 @@
 
     .contact-form { padding: 2.25rem; background: var(--white); }
     .form-row { display: grid; gap: 0.35rem; margin-bottom: 1rem; }
+    .choice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin-bottom: 1rem; }
+    .choice { display: flex; align-items: center; gap: 0.5rem; padding: 0.7rem 0.8rem; border: 1px solid var(--border); border-radius: 14px; color: var(--text); background: var(--white); font-weight: 700; }
+    .choice input { width: auto; }
     label { font-weight: 900; color: var(--dark); }
     input, select, textarea { width: 100%; border: 1px solid var(--border); border-radius: 14px; padding: 0.9rem 1rem; font: inherit; color: var(--text); background: var(--white); }
     textarea { min-height: 132px; resize: vertical; }
@@ -171,6 +174,7 @@
       .goat { left: 1.8rem; bottom: 7.2rem; transform: scale(.74); }
       .bubble { right: 2.5rem; top: 5.7rem; }
       .contact-info, .contact-form, .details-panel, .service-card, .pricing-header { padding: 1.5rem; }
+      .choice-grid { grid-template-columns: 1fr; }
       .lizard { right: 5.7rem; top: 4rem; }
       .fishbowl { left: 1rem; }
     }
@@ -226,20 +230,20 @@
           <div class="price-item"><strong>30-Minute Drop-In Visit</strong><span>$22</span></div>
           <div class="price-item"><strong>45-Minute Drop-In Visit</strong><span>$30</span></div>
           <div class="price-item"><strong>60-Minute Drop-In Visit</strong><span>$40</span></div>
-          <div class="price-item"><strong>20-30 Minute Pet Walk</strong><span>$20</span></div>
+          <div class="price-item"><strong>30-Minute Pet Walk</strong><span>$20</span></div>
           <div class="price-item"><strong>45-Minute Pet Walk</strong><span>$30</span></div>
           <div class="price-item"><strong>Additional Pet</strong><span>+$5 each</span></div>
           <div class="price-item"><strong>Holiday Visits</strong><span>+$10</span></div>
           <div class="price-item"><strong>Same-Day Booking</strong><span>+$10</span></div>
         </div>
-        <div class="price-note"><p><strong>Cancellation notice:</strong> Please schedule or cancel visits at least one day in advance.</p><p><strong>Service area:</strong> Serving West Hempfield Township.</p></div>
+        <div class="price-note"><p><strong>Cancellation notice:</strong> Please cancel visits at least one day in advance.</p><p><strong>Service area:</strong> Serving West Hempfield Township.</p></div>
       </div>
     </section>
 
     <section class="section" id="details">
       <div class="details-panel">
-        <div><h2>Visit details</h2><p>Care is available on a clear schedule with advance notice, so visits can be planned properly and pets get the attention they need.</p></div>
-        <div class="details-list"><div class="detail-item"><strong>Hours</strong><span>Available Tuesday through Sunday, from dawn to dusk.</span></div><div class="detail-item"><strong>Scheduling</strong><span>Please schedule or cancel visits at least one day in advance.</span></div><div class="detail-item"><strong>Service area</strong><span>Serving West Hempfield Township.</span></div></div>
+        <div><h2>Visit details</h2><p>Care is available every day of the week with advance notice, so visits can be planned properly and pets get the attention they need.</p></div>
+        <div class="details-list"><div class="detail-item"><strong>Hours</strong><span>Available Monday through Sunday, dawn to dusk.</span></div><div class="detail-item"><strong>Scheduling</strong><span>Please cancel visits at least one day in advance.</span></div><div class="detail-item"><strong>Service area</strong><span>Serving West Hempfield Township.</span></div></div>
       </div>
     </section>
 
@@ -252,8 +256,15 @@
 
     <section class="section" id="contact">
       <div class="contact">
-        <div class="contact-info"><div><h2>Request a visit</h2><p>Send the form and the details will be delivered by email. Include your address, requested service, preferred dates, and anything important about your pet's care.</p><p><strong>Email:</strong> <a href="mailto:rachel@ninja-neer.net">rachel@ninja-neer.net</a></p><p><strong>Phone:</strong> <a href="tel:7178929566">717-892-9566</a></p></div><div class="home-scene" aria-label="Illustration of a cat resting at home with a small aquarium"><div class="window" aria-hidden="true"></div><div class="plant" aria-hidden="true"><span class="leaf one"></span><span class="leaf two"></span><span class="leaf three"></span><span class="pot"></span></div><div class="aquarium" aria-hidden="true"><span class="fish one"></span><span class="fish two"></span></div><div class="pet-bed" aria-hidden="true"></div><div class="cat" aria-hidden="true"><div class="tail"></div><div class="body"></div><div class="ear one"></div><div class="ear two"></div><div class="head"></div></div></div></div>
-        <form class="contact-form" action="https://formsubmit.co/rachel@ninja-neer.net" method="POST"><h3>Tell me what you need</h3><input type="hidden" name="_subject" value="New R.H. Pet Care Contact Form Submission" /><input type="hidden" name="_captcha" value="false" /><input type="hidden" name="_template" value="table" /><div class="form-row"><label for="name">Name</label><input id="name" type="text" name="name" autocomplete="name" required /></div><div class="form-row"><label for="email">Email</label><input id="email" type="email" name="email" autocomplete="email" required /></div><div class="form-row"><label for="phone">Phone</label><input id="phone" type="tel" name="phone" autocomplete="tel" /></div><div class="form-row"><label for="address">Address</label><input id="address" type="text" name="address" autocomplete="street-address" required /></div><div class="form-row"><label for="service">Service Needed</label><select id="service" name="service"><option value="Pet walking">Pet walking</option><option value="Drop-in visit">Drop-in visit</option></select></div><div class="form-row"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me about your pet, preferred dates, care routine, and anything important to know before the visit." required></textarea></div><button type="submit">Send Message</button><p class="form-note">You can also email or call directly using the contact information listed here.</p></form>
+        <div class="contact-info"><div><h2>Request a visit</h2><p>Send the form and the details will be delivered by email. Include your address, requested service, preferred dates, visit length, and anything important about your pet's care.</p><p><strong>Email:</strong> <a href="mailto:rachel@ninja-neer.net">rachel@ninja-neer.net</a></p><p><strong>Phone:</strong> <a href="tel:7178929566">717-892-9566</a></p></div><div class="home-scene" aria-label="Illustration of a cat resting at home with a small aquarium"><div class="window" aria-hidden="true"></div><div class="plant" aria-hidden="true"><span class="leaf one"></span><span class="leaf two"></span><span class="leaf three"></span><span class="pot"></span></div><div class="aquarium" aria-hidden="true"><span class="fish one"></span><span class="fish two"></span></div><div class="pet-bed" aria-hidden="true"></div><div class="cat" aria-hidden="true"><div class="tail"></div><div class="body"></div><div class="ear one"></div><div class="ear two"></div><div class="head"></div></div></div></div>
+        <form class="contact-form" action="https://formsubmit.co/rachel@ninja-neer.net" method="POST"><h3>Tell me what you need</h3><input type="hidden" name="_subject" value="New R.H. Pet Care Contact Form Submission" /><input type="hidden" name="_captcha" value="false" /><input type="hidden" name="_template" value="table" />
+          <div class="form-row"><label for="name">Name</label><input id="name" type="text" name="name" autocomplete="name" required /></div>
+          <div class="form-row"><label for="email">Email</label><input id="email" type="email" name="email" autocomplete="email" required /></div>
+          <div class="form-row"><label for="phone">Phone</label><input id="phone" type="tel" name="phone" autocomplete="tel" /></div>
+          <div class="form-row"><label for="address">Address</label><input id="address" type="text" name="address" autocomplete="street-address" required /></div>
+          <label>Service Needed</label><div class="choice-grid"><label class="choice"><input type="checkbox" name="services[]" value="Pet walking" /> Pet walking</label><label class="choice"><input type="checkbox" name="services[]" value="Drop-in visit" /> Drop-in visit</label></div>
+          <label>Preferred Visit Length</label><div class="choice-grid"><label class="choice"><input type="checkbox" name="visit_lengths[]" value="15 minutes" /> 15 minutes</label><label class="choice"><input type="checkbox" name="visit_lengths[]" value="30 minutes" /> 30 minutes</label><label class="choice"><input type="checkbox" name="visit_lengths[]" value="45 minutes" /> 45 minutes</label><label class="choice"><input type="checkbox" name="visit_lengths[]" value="60 minutes" /> 60 minutes</label></div>
+          <div class="form-row"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me about your pet, preferred dates, care routine, and anything important to know before the visit." required></textarea></div><button type="submit">Send Message</button><p class="form-note">You can also email or call directly using the contact information listed here.</p></form>
       </div>
     </section>
   </main>
